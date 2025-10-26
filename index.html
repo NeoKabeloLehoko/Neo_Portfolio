@@ -37,10 +37,6 @@
           <a class="btn primary" href="#projects">See projects</a>
           <a class="btn outline" href="#contact">Contact me</a>
         </div>
-        <div class="socials">
-          <a href="https://github.com/NeoKabeloLehoko" aria-label="GitHub">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/neo-lehoko-6b31a822b/" aria-label="LinkedIn">LinkedIn</a>
-        </div>
       </div>
       <div class="hero-right">
         <img src="profile.jpeg" alt="Neo Lehoko — profile photo" class="profile-photo" />
@@ -137,28 +133,52 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container section contact">
-      <h3>Contact</h3>
-      <p>Phone: <strong>062 459 6857</strong> · Email: <strong><a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a></strong></p>
+    <!-- Contact -->
+<section id="contact" class="container section contact">
+  <h3>Get in Touch</h3>
+  <p>If you have any questions, opportunities, or just want to say hi, feel free to reach out!</p>
 
-      <form action="mailto:neolehoko13@gmail.com" method="post" enctype="text/plain" class="contact-form">
-        <label>
-          Your name
-          <input type="text" name="Name" placeholder="Your name" required>
-        </label>
-        <label>
-          Your email
-          <input type="email" name="Email" placeholder="you@example.com" required>
-        </label>
-        <label>
-          Message
-          <textarea name="Message" rows="4" placeholder="Tell me about your project..." required></textarea>
-        </label>
-        <div>
-          <button type="submit" class="btn primary">Send</button>
-        </div>
-      </form>
-    </section>
+  <div class="contact-wrapper">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <div class="info-item">
+        <strong>Phone:</strong>
+        <a href="tel:0624596857">062 459 6857</a>
+      </div>
+      <div class="info-item">
+        <strong>Email:</strong>
+        <a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a>
+      </div>
+      <div class="info-item">
+        <strong>Location:</strong>
+        Boksburg, South Africa
+      </div>
+      <div class="info-item socials">
+        <strong>Connect:</strong>
+        <a href="https://github.com/NeoKabeloLehoko" target="_blank">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/neo-lehoko-6b31a822b/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="mailto:neolehoko13@gmail.com" method="post" enctype="text/plain" class="contact-form">
+      <label>
+        <span>Your Name</span>
+        <input type="text" name="Name" placeholder="Your name" required>
+      </label>
+      <label>
+        <span>Your Email</span>
+        <input type="email" name="Email" placeholder="you@example.com" required>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="Message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </label>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
   </main>
 
   <footer class="site-footer">
