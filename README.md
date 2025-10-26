@@ -17,7 +17,7 @@ This portfolio is a simple and responsive website created to highlight my:
 
 ## Technologies Used
 
-- **HTML5** – for structure and content  
+- **HTML** – for structure and content  
 - **CSS** – for layout and design  
 
 
