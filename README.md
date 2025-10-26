@@ -1,7 +1,7 @@
 # Portfolio Website
 
 Welcome to my **personal portfolio website**, built with **HTML and CSS**.  
-This project showcases my skills, projects, and background in Information Technology, Business Analysis, and Cloud Computing.
+This project represents a digital cv, it showcases my skills, projects, and background in Information Technology, Business Analysis, and Cloud Computing.
 
 ---
 
