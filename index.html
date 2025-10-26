@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Neo Kabelo Lehoko — Portfolio</title>
+  <meta name="description" content="Neo Kabelo Lehoko — IT Support / Software Developer. CV, projects, skills and contact."/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Neo Lehoko</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero container">
+      <div class="hero-left">
+        <h2>Neo Kabelo Lehoko</h2>
+        <p class="tagline">Information Technology Profesional   |  Cloud and Cybersecurity Enthusiast   Emerging Business and Data Analyst</p>
+        <p class="hero-text">
+          Early-career Information Technology professional with hands-on experience in software solutions, technical support, and cloud technologies. Skilled in business analysis, data interpretation, and process improvement. Passionate about leveraging IT skills to solve real-world business problems and support organizational growth.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn outline" href="#contact">Contact me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/NeoKabeloLehoko" aria-label="GitHub">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/neo-lehoko-6b31a822b/" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="profile.jpeg" alt="Neo Lehoko — profile photo" class="profile-photo" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section">
+
+      <div class="two-col">
+        <div>
+          <h4>Experience</h4>
+          <strong>IT Support Intern — Centlec</strong><br/>
+          April 2023 – May 2024 <br/>      
+          <ul>
+            <li>User support & remote assistance</li>
+            <li>Hardware & software maintenance</li>
+            <li>Network troubleshooting & administration</li>
+            <li>Security compliance & Collboration</li>  
+            <li>Documentation and reporting</li> 
+              
+          </ul>
+        </div>
+
+        <div>
+          <h4>Education</h4>
+
+          <div class="edu-item">
+            <strong>Advanced Diploma in Business Analysis</strong><br/>
+            MANCOSA (2025)
+            <ul>
+              <li>Business Analysis, Data Interpretation, and Process Improvement</li>
+              <li>Software and IT systems integration</li>
+            </ul>
+          </div>
+
+          <div class="edu-item">
+            <strong>Diploma in IT — Software Development</strong><br/>
+            Central University of Technology (2019–2022)
+            <ul>
+              <li>Software Development, Databases, Internet Programming</li>
+              <li>Network & Systems fundamentals</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section">
+      <h3>Projects</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>AWS RE/START Journey </h4>
+            <p> Visual documentation on what I’ve learned and practiced during the process of gaining my AWS Cloud Practicioner certification - includes notes, labs and projects </p>
+          <p class="small">Tools: AWS CLI, Management Console and Skill builder</p>
+        </article>
+
+        <article class="card">
+          <h4>IT Support Automation Scripts</h4>
+          <p>Scripts to automate common support tasks (user account checks, log collection). Great for faster ticket resolution.</p>
+          <p class="small">Tools: PowerShell / Bash / Windows tools</p>
+        </article>
+
+        <article class="card">
+          <h4>Website & Graphic Assets</h4>
+          <p>Designs and posters created as part of course & freelance work (logos, business portfolio designs).</p>
+          <p class="small">Tools: HTML, CSS, Graphic tools(Adobe)</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container section">
+      <h3>Top Skills</h3>
+      <div class="skill-grid">
+        <div class="skill">Hardware & Repair</div>
+        <div class="skill">Network Troubleshooting</div>
+        <div class="skill">Microsoft 365</div>
+        <div class="skill">C#</div>
+        <div class="skill">SQL</div>
+        <div class="skill">CSS & Web</div>
+        <div class="skill">Windows OS</div>
+        <div class="skill">Cybersecurity Fundamentals</div> 
+          
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="container section">
+      <h3>Resume</h3>
+      <p>Download the PDF resume or open it in a new tab:</p>
+      <a class="btn primary" href="Neo_CV.pdf" target="_blank" download>Download CV (PDF)</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section contact">
+      <h3>Contact</h3>
+      <p>Phone: <strong>062 459 6857</strong> · Email: <strong><a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a></strong></p>
+
+      <form action="mailto:neolehoko13@gmail.com" method="post" enctype="text/plain" class="contact-form">
+        <label>
+          Your name
+          <input type="text" name="Name" placeholder="Your name" required>
+        </label>
+        <label>
+          Your email
+          <input type="email" name="Email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea name="Message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </label>
+        <div>
+          <button type="submit" class="btn primary">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Neo Kabelo Lehoko — Boksburg • <a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
