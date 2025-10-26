@@ -188,4 +188,13 @@ body{
 }
 .edu-item:last-child {
   border-bottom: none;
+} 
+.project-link {
+  text-decoration: none;       /* remove underline */
+  color: #222;                 /* heading color */
+  transition: color 0.3s ease; /* smooth hover effect */
+}
+
+.project-link:hover {
+  color: #007bff;              /* change color on hover */
 }
