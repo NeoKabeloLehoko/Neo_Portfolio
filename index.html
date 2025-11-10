@@ -113,14 +113,15 @@
     <section id="skills" class="container section">
       <h3>Top Skills</h3>
       <div class="skill-grid">
-        <div class="skill">Hardware & Repair</div>
-        <div class="skill">Network Troubleshooting</div>
-        <div class="skill">Microsoft 365</div>
-        <div class="skill">C#</div>
-        <div class="skill">SQL</div>
-        <div class="skill">CSS & Web</div>
-        <div class="skill">Windows OS</div>
+          
+        <div class="skill">Programming (C# & SQL)</div>
+        <div class="skill">Web Development</div>
+        <div class="skill">System Optimisation</div>
+        <div class="skill">Hardware Repair</div>
+        <div class="skill">Troubleshooting</div>
         <div class="skill">Cybersecurity Fundamentals</div> 
+        <div class="skill">AWS Cloud Computing</div>
+        <div class="skill">Business Analysis</div>
           
       </div>
     </section>
@@ -131,9 +132,7 @@
       <p>Download the PDF resume or open it in a new tab:</p>
       <a class="btn primary" href="Neo_CV.pdf" target="_blank" download>Download CV (PDF)</a>
     </section>
-
-    <!-- Contact -->
-    <!-- Contact -->
+<!-- Contact -->
 <section id="contact" class="container section contact">
   <h3>Get in Touch</h3>
   <p>If you have any questions, opportunities, or just want to say hi, feel free to reach out!</p>
@@ -142,53 +141,87 @@
     <!-- Contact Info -->
     <div class="contact-info">
       <div class="info-item">
-        <strong>Phone:</strong>
-        <a href="tel:0624596857">062 459 6857</a>
-      </div>
-      <div class="info-item">
         <strong>Email:</strong>
         <a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a>
       </div>
-      <div class="info-item">
-        <strong>Location:</strong>
-        Boksburg, South Africa
-      </div>
+
       <div class="info-item socials">
         <strong>Connect:</strong>
-        <a href="https://github.com/NeoKabeloLehoko" target="_blank">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/neo-lehoko-6b31a822b/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/NeoKabeloLehoko" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/neo-lehoko-6b31a822b/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <div class="info-item">
+        <strong>Location:</strong>
+        Boksburg, Gauteng, South Africa<br>
+        <a href="https://www.google.com/maps/place/Boksburg,+Gauteng,+South+Africa" target="_blank" rel="noopener">
+          📍 View on Google Maps
+        </a>
       </div>
     </div>
 
     <!-- Contact Form -->
-    <form action="mailto:neolehoko13@gmail.com" method="post" enctype="text/plain" class="contact-form">
+    <form action="https://formspree.io/f/manayyop" method="POST" class="contact-form">
       <label>
         <span>Your Name</span>
-        <input type="text" name="Name" placeholder="Your name" required>
+        <input type="text" name="name" placeholder="Your name" required>
       </label>
       <label>
         <span>Your Email</span>
-        <input type="email" name="Email" placeholder="you@example.com" required>
+        <input type="email" name="email" placeholder="you@example.com" required>
       </label>
       <label>
         <span>Message</span>
-        <textarea name="Message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
       </label>
+
+      <!-- Status message -->
+      <p id="form-status" style="display:none; margin-top:10px;"></p>
+
       <button type="submit" class="btn primary">Send Message</button>
     </form>
   </div>
 </section>
 
-  </main>
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Neo Kabelo Lehoko — Boksburg • <a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a></p>
+  </div>
+</footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Neo Kabelo Lehoko — Boksburg • <a href="mailto:neolehoko13@gmail.com">neolehoko13@gmail.com</a></p>
-    </div>
-  </footer>
+<script>
+  // Update footer year automatically
+  document.getElementById('year').innerText = new Date().getFullYear();
 
-  <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  // Handle form submission
+  const form = document.querySelector(".contact-form");
+  const status = document.querySelector("#form-status");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        status.style.display = "block";
+        status.style.color = "green";
+        status.textContent = "✅ Message sent successfully!";
+        form.reset();
+      } else {
+        status.style.display = "block";
+        status.style.color = "red";
+        status.textContent = "❌ Oops! There was a problem sending your message.";
+      }
+    } catch (error) {
+      status.style.display = "block";
+      status.style.color = "red";
+      status.textContent = "⚠️ Network error — please try again later.";
+    }
+  });
+</script>
