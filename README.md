@@ -21,4 +21,4 @@ This portfolio is a simple and responsive website created to highlight my:
 - **CSS** – for layout and design  
 
 
-Link to webside https://neokabelolehoko.github.io/Neo_Portfolio/
+Link to website https://neokabelolehoko.github.io/Neo_Portfolio/
